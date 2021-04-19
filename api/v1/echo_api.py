@@ -5,5 +5,5 @@ from api import api, sample_service
 def echo():
     echo_request_body = request.json
     print(echo_request_body)
-    response = sample_service.echo(echo_request_body)
+    response = sample_service.do_echo(echo_request_body)
     return jsonify(response)
