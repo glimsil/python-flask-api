@@ -8,7 +8,7 @@ To install, just type:
 
 ### Run
 Start the rest server typing:
-    python3 src/api.py
+    python3 api.py
 
 It will serve at localhost:8080
 
@@ -23,4 +23,9 @@ GET v1/hello
 POST v1/echo
 ```
     curl -X POST -H "Content-Type: application/json" --data "{\"test\": \"sample message\"}" http://localhost:8080/v1/echo
+```
+
+You can also run the python client example, typing:
+```
+    python3 client.py
 ```
